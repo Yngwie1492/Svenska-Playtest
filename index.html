@@ -11,7 +11,8 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Svenska I" startnode="1" creator="Twine" creator-version="2.2.1" ifid="705005FC-7EB8-482F-8603-175C9823CACF" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Morgon" tags="" position="815.388916015625,129" size="100,100">(set: $tea to (datamap:&quot;swedish&quot;, &quot;te&quot;, &quot;english&quot;, &quot;tea&quot;, &quot;pickupText&quot;, &quot;You take the tea.&quot;, &quot;isCarried&quot;, false))(set: $juice to (datamap:&quot;swedish&quot;, &quot;juice&quot;, &quot;english&quot;,&quot;juice&quot;, &quot;pickupText&quot;, &quot;You take some juice.&quot;, &quot;isCarried&quot;, false))(set: $selectedItem to &quot;&quot;)You wake up with a wicked hangover. Ouch. 
+<tw-storydata name="Svenska I" startnode="1" creator="Twine" creator-version="2.2.1" ifid="705005FC-7EB8-482F-8603-175C9823CACF" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Morgon" tags="" position="815.388916015625,129" size="100,100">(set: $tea to (datamap:&quot;swedish&quot;, &quot;te&quot;, &quot;english&quot;, &quot;tea&quot;, &quot;pickupText&quot;, &quot;You take the tea.&quot;, &quot;isCarried&quot;, false))(set: $juice to (datamap:&quot;swedish&quot;, &quot;juice&quot;, &quot;english&quot;,&quot;juice&quot;, &quot;pickupText&quot;, &quot;You take some juice.&quot;, &quot;isCarried&quot;, false))(set: $selectedItem to &quot;&quot;)(set: $hoursAsleep to 8)
+You wake up with a wicked hangover. Ouch. 
 
 It must have been some party last night! Wait, what party? Try as you might, you cannot seem to remember drinking last night. 
 
@@ -19,13 +20,11 @@ In fact, you can&#39;t recall anything from the previous night.
 
 So where did it come from? 
 
-(set: $hoursAsleep to 8)
-
 [[Look around|look around]]
 [[&quot;Who cares, I&#39;ll go back to sleep&quot;|Sleep]]
 
-</tw-passagedata><tw-passagedata pid="2" name="look around" tags="" position="1158.5,104.5" size="100,100">(if: $hoursAsleep is 8) [The sunlight shining right into your eyes aggravates your headache. A bird chirps outside.]
-(if: $hoursAsleep &gt; 8) [Is it early morning or late at night? Outside is silent and grey. The room too is dark and quiet.]
+</tw-passagedata><tw-passagedata pid="2" name="look around" tags="" position="1158.5,104.5" size="100,100">(if: $hoursAsleep &lt; 9)[The sunlight shining right into your eyes aggravates your headache. A bird chirps outside.]
+(if: $hoursAsleep &gt; 8)[Is it early morning or late at night? Outside is silent and grey. The room is dark and quiet.]
 
 You find yourself in a small, quaint bedroom. It is modestly but lovingly furnished. The furniture is a mish mash of older hand-me-down pieces and contemporary items. 
 
@@ -167,11 +166,15 @@ The rest of the dinner proceeds with some small talk, mostly in Swedish. As the 
 
 </tw-passagedata><tw-passagedata pid="18" name="end" tags="" position="697.5,284" size="100,100">Welcome to HOW DO YOU SAY MURDER IN SWEDISH. 
 
-By James Smrikarov
+An interactive text for beginning (A1) learners
 
-A short introductory text to A1 level learners. 
+Copyright 2018, James Smrikarov
 
-[[start over|God Morgon]]</tw-passagedata><tw-passagedata pid="19" name="Item Description" tags="" position="1055.388916015625,432.5" size="100,100">Double-click this passage to edit it
+If you have any mistakes or comments please email me by clicking (link: &quot;here&quot;)[(open-url: &quot;mailto:jsmrikarov@gmail.com&quot;)].
+
+You can also visit (link: &quot;my professional website&quot;)[(open-url: &quot;http://cedarinstructionaldesign.weebly.com&quot;)].
+
+[[Start over|God Morgon]]</tw-passagedata><tw-passagedata pid="19" name="Item Description" tags="" position="1055.388916015625,432.5" size="100,100">Double-click this passage to edit it
 
 (link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="20" name="Item Acquired" tags="" position="1224.5,469.5" size="100,100">(print: $selectedItem&#39;s &quot;name&quot;)
 
