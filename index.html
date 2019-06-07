@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Svenska I" startnode="1" creator="Twine" creator-version="2.2.1" ifid="705005FC-7EB8-482F-8603-175C9823CACF" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Morgon" tags="" position="815.388916015625,129" size="100,100">(set: $tea to (datamap:&quot;swedish&quot;, &quot;te&quot;, &quot;english&quot;, &quot;tea&quot;, &quot;pickupText&quot;, &quot;You take the tea.&quot;, &quot;isCarried&quot;, false))(set: $juice to (datamap:&quot;swedish&quot;, &quot;juice&quot;, &quot;english&quot;,&quot;juice&quot;, &quot;pickupText&quot;, &quot;You take some juice.&quot;, &quot;isCarried&quot;, false))(set: $selectedItem to &quot;&quot;)(set: $hoursAsleep to 8)
+<tw-storydata name="Svenska I" startnode="1" creator="Twine" creator-version="2.3.1" ifid="705005FC-7EB8-482F-8603-175C9823CACF" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Morgon" tags="" position="815.388916015625,129" size="100,100">(set: $tea to (datamap:&quot;swedish&quot;, &quot;te&quot;, &quot;english&quot;, &quot;tea&quot;, &quot;pickupText&quot;, &quot;You take the tea.&quot;, &quot;isCarried&quot;, false))(set: $juice to (datamap:&quot;swedish&quot;, &quot;juice&quot;, &quot;english&quot;,&quot;juice&quot;, &quot;pickupText&quot;, &quot;You take some juice.&quot;, &quot;isCarried&quot;, false))(set: $selectedItem to &quot;&quot;)(set: $hoursAsleep to 8)
 You wake up with a wicked hangover. Ouch. 
 
 It must have been some party last night! Wait, what party? Try as you might, you cannot seem to remember drinking last night. 
@@ -72,7 +72,7 @@ You want to say, &quot;I&#39;m sorry I don&#39;t understand&quot;, but you can&#
 
 [[Shake your head|greetings2]]</tw-passagedata><tw-passagedata pid="10" name="greetings2" tags="" position="1937.5,129" size="100,100">&quot;Talar du svenska?&quot; He says again, in a language that sounds musical.
 
-&quot;Du kan inte tala svenska. Okej. English?&quot;
+&quot;Nej? Du kan inte tala svenska. Okej. English?&quot;
 
 You nod. However, despite no longer being committed to silence, you remain afraid to answer. 
 
@@ -80,7 +80,7 @@ You nod. However, despite no longer being committed to silence, you remain afrai
 
 You finally manage two words, &quot;I am...&quot; but the name doesn&#39;t follow. How can that be? &quot;I don&#39;t know.&quot;
 
-&quot;Vet du inte? Så synd! Umm...&#39;so sad.&#39; Yes that&#39;s it. Ursäkta - I&#39;m sorry -  but my English is not so good.&quot; 
+&quot;Vet du inte? Vad synd! Umm...&#39;what a pity.&#39; Yes that&#39;s it. Ursäkta - I&#39;m sorry -  but my English is not so good.&quot; 
 
 You both remain silent for a few moments, unsure on how to proceed.
 
@@ -126,11 +126,11 @@ They are sitting down at the kitchen table with an unassuming spread set out bef
 
 (link: &quot;Jag dricker te.&quot;)[(set:$dinnerDrink to 1)(set:$dinnerDrinkName to &quot;tea&quot;)(set:$dinnerDrinkNameSwe to &quot;te&quot;)(goto: &quot;dinner4&quot;)]
 
-(link: &quot;Jag dricker saft.&quot;)[(set:$dinnerDrink to 0)(set: $dinnerDrinkName to &quot;saft&quot;)(set: $dinnerDrinkNameSwe to &quot;saft&quot;)(goto: &quot;dinner4&quot;)]</tw-passagedata><tw-passagedata pid="15" name="dinner4" tags="" position="2126.5,802.5" size="100,100">(if: $dinnerDrink is 0)[She pours the juice into your cup and says, &quot;varsågod!&quot;]
+(link: &quot;Jag dricker saft.&quot;)[(set:$dinnerDrink to 0)(set: $dinnerDrinkName to &quot;juice&quot;)(set: $dinnerDrinkNameSwe to &quot;juice&quot;)(goto: &quot;dinner4&quot;)]</tw-passagedata><tw-passagedata pid="15" name="dinner4" tags="" position="2126.5,802.5" size="100,100">(if: $dinnerDrink is 0)[She pours the juice into your cup and says, &quot;varsågod!&quot;]
 
 (if: $dinnerDrink is 1)[She pours the tea into your cup and says, &quot;varsågod!&quot;]
 
-You take a look out at the spread - cheese, ham, apples, hard boiled eggs, pickles, butter, black bread. The smell from the hallway must have from the stovetop where a big pot of soup is still simmering. 
+You take a look out at the spread - cheese, ham, apples, hard boiled eggs, pickles, butter, crackers. The smell from the hallway must have from the stovetop where a pot of carrot soup is still simmering. 
 
 &quot;Vad heter du?&quot; She asks you.
 
@@ -158,7 +158,7 @@ That seems like a good plan. And it&#39;s not like you have much of a choice.
 </tw-passagedata><tw-passagedata pid="16" name="dinner8" tags="" position="1377.388916015625,576.9444580078125" size="100,100">(set: $selectedItem to &quot;&quot;)(set: $previousPassage to &quot;&quot;)
 &quot;Det vet jag inte. Let&#39;s not worry about it now. Vi ska se i morgon.&quot; He passes a concerned look to his wife, who from the looks of it must be wonderful poker player. 
 
-The rest of the dinner proceeds with some small talk, mostly in Swedish. As the three of you finish up and start clearing the table, the TV is turned off and Sven leads you to your room.(if: $answer1 is 1)[Before leaving he hands you a couple of small pills for your headache and a cup of water.]
+The rest of the dinner proceeds with some small talk, mostly in Swedish. As the three of you finish up and start clearing the table, the TV is turned off and Sven leads you to your room.(if: $answer1 is 1)[Before leaving he says, &quot;God natt!&quot; and hands you a couple of small pills for your headache and a cup of water.]
 
 [[Go to bed|bedtime]]</tw-passagedata><tw-passagedata pid="17" name="bedtime" tags="" position="1121.5,624.5" size="100,100">Sitting on the bed are a pair of pajamas. You look around but don&#39;t see a toothbrush. 
 
@@ -185,9 +185,9 @@ You can also visit (link: &quot;my professional website&quot;)[(open-url: &quot;
 
 (link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="20" name="Item Acquired" tags="" position="1224.5,469.5" size="100,100">(print: $selectedItem&#39;s &quot;name&quot;)
 
-(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="21" name="dinner5" tags="" position="1932.388916015625,727.8333435058594" size="100,100">You continue to eat as the TV news comes on. You all turn to look at the big, bold writing announcing the top story:
+(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="21" name="dinner5" tags="" position="1932.388916015625,727.8333435058594" size="100,100">The food is served, and before Sven can finish his explanation of what makes his &quot;morotssoppa&quot; the best in Sweden, the start of the TV news interrupts him. You all turn to look as the newscaster speaks,
 
-&quot;BIG BENNY ANDERSSON ÄR BORTA!&quot;
+&quot;God kväll Sverige, Big Benny Andersson ÄR BORTA!&quot;
 
 They both look shocked, put down their spoons and stare at the screen.
 
@@ -195,7 +195,7 @@ You ask, &quot;What does&#39;borta&#39; mean? Who is Benny?&quot;
 
 Sven answers, &quot;He is missing!&quot; Before he can continue the TV presenter speaks up,
 
-&quot;&quot;Benny är 55 år. Han bor i Gladborg. Han har en fru, och två dottrar. Ringa polisen med information.&quot;&quot;
+&quot;Benny är 55 år. Han bor i Gladborg. Han har en fru, och två dottrar. Polisutredningen pågår. Ring polisen med information.&quot;
 
 After this, Sven turns down the volume and continues, &quot;He is a local businessman. Lotta knows him better than I do, she used to work in the town police department.&quot;
 
@@ -207,13 +207,9 @@ What a strange coincidence, maybe this Benny got caught up in the snowfall? You 
 
 [[&quot;But why do you look so shocked? Maybe he went out for a hike?&quot;|dinner6]]</tw-passagedata><tw-passagedata pid="22" name="dinner6" tags="" position="1728.388916015625,697.8333435058594" size="100,100">&quot;Benny is an important man around here,&quot; Sven starts to tell you between sips of his herbal tea, &quot;He owns the pet food factory just south of town, called BENCO. Nearly half the town works or has worked there at some point. He has done a lot of good here, but you don&#39;t get to the top without - hur säger man? - breaking some eggs.&quot;
 
-Lotta watches her husband with interest, trying to follow his description. 
+Lotta watches her husband with interest, trying to follow his description. as yhou reach for another cracker to dip into your soup.
 
-Suddenly feeling thirsty, you reach for another drink.
-
-[[Ta mer $dinnerDrinkNameSwe|dinner 7]]</tw-passagedata><tw-passagedata pid="23" name="dinner 7" tags="" position="1553.388916015625,673.8333435058594" size="100,100">You pour yourself a new cup of $dinnerDrinkName. 
-
-&quot;Hur känner du Benny?&quot; You ask. In these remote towns the chances are good that everyone knows everyone else.
+[[Ta en knäckebröd|dinner 7]]</tw-passagedata><tw-passagedata pid="23" name="dinner 7" tags="" position="1553.388916015625,673.8333435058594" size="100,100">&quot;Hur känner du Benny?&quot; You ask, plunging the cracker into the soup. In these remote towns the chances are good that everyone knows everyone else.
 
 &quot;Ja, jag känner Benny. Jag kommer från Gladborg - we went to school together, although he is a couple of years younger than I am. Lotta had several run-ins with him in her job, but he never was formally charged with any crimes.&quot;
 
